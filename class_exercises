@@ -1,0 +1,56 @@
+class Pessoa():
+    
+          def __init__(self, nome, idade, endereco):
+               self.nome = nome
+               self.idade = idade
+               self.endereco = endereco
+       
+          def mostrar_endereco(self):
+           
+               return self.endereco
+    
+          def mostrar_nome(self):
+       
+               return self.nome
+    
+          def mostrar_idade(self):
+                 
+               return self.idade
+    
+    
+Usuário = Pessoa('Vanessa', (24), 'Rua dos Alfaiates, número 60 casa 320')
+     
+endereço = ('Endereço do usuário:')
+print(endereço, Usuário.mostrar_endereco())
+
+idade = ('Idade:')
+print(idade, Usuário.mostrar_idade())
+
+nome = ('Nome do aluno(a):')
+print(nome, Usuário.mostrar_nome())
+
+class AlunoInformações():
+     
+          def __init__(self,numero_matricula, curso_graduação):
+          
+               self.numero_matricula = numero_matricula
+               self.curso_graduação = curso_graduação
+
+          def mostrar_matricula (self):
+
+               return self.numero_matricula
+
+          def curso_graduacao(self):
+
+               return self.curso_graduação
+          
+
+Aluno = AlunoInformações(9898688,'Ciência da computação')
+
+matrícula = ('O número da matrícula é:')
+curso = ('Curso de graduação:')
+     
+print(matrícula, Aluno.mostrar_matricula())
+print(curso, Aluno.curso_graduacao())
+
+
