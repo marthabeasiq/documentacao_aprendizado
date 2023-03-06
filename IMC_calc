@@ -1,0 +1,46 @@
+class IMC_C(): 
+
+    def IMC_C (self, peso, altura):
+
+        self.peso = peso
+
+        self.altura = altura
+
+    def Cálculo (peso, altura):
+     
+        peso / altura ** 2
+
+
+def ClassificaçãoIMC():
+
+    if IMC_C < 18.5: 
+
+        print ('Seu {} está indicando um peso abaixo do normal')
+
+    elif ClassificaçãoIMC >= 18.5 and ClassificaçãoIMC <= 24.9:
+
+        print('Seu {} está indicando um peso normal')  
+
+    elif ClassificaçãoIMC >= 25.0 and ClassificaçãoIMC <= 29.9:
+
+        print('Seu {} está indicando um excesso de peso')
+
+    elif ClassificaçãoIMC >= 30.0 and ClassificaçãoIMC <= 34.9:
+
+        print('Seu {} está indicando uma obesidade classe I')
+
+    elif ClassificaçãoIMC >= 35.0 and ClassificaçãoIMC <= 39.9:
+
+        print('Seu {} está indicando uma obesidade classe II')
+
+    elif ClassificaçãoIMC >= 40.0:
+
+        print('Seu {} está indicando obesidade do tipo mórbida')
+
+    else:
+        pass
+
+
+peso = float(input(('Qual o seu peso? ')))
+altura = float(input('Qual a sua altura? '))
+
