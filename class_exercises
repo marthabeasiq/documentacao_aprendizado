@@ -2,7 +2,7 @@ class Pessoa():
     
           def __init__(self, nome, idade, endereco):
                self.nome = nome
-               self.idade = idade
+               self.idade = int(idade)
                self.endereco = endereco
        
           def mostrar_endereco(self):
@@ -18,7 +18,7 @@ class Pessoa():
                return self.idade
     
     
-Usuário = Pessoa('Vanessa', (24), 'Rua dos Alfaiates, número 60 casa 320')
+Usuário = Pessoa('Vanessa', 24, 'Rua dos Alfaiates, número 60 casa 320')
      
 endereço = ('Endereço do usuário:')
 print(endereço, Usuário.mostrar_endereco())
@@ -26,7 +26,7 @@ print(endereço, Usuário.mostrar_endereco())
 idade = ('Idade:')
 print(idade, Usuário.mostrar_idade())
 
-nome = ('Nome do aluno(a):')
+nome = ('Nome do aluno (a):')
 print(nome, Usuário.mostrar_nome())
 
 class AlunoInformações():
@@ -47,10 +47,11 @@ class AlunoInformações():
 
 Aluno = AlunoInformações(9898688,'Ciência da computação')
 
+# melhorar esse bloco de código
+
 matrícula = ('O número da matrícula é:')
 curso = ('Curso de graduação:')
      
 print(matrícula, Aluno.mostrar_matricula())
 print(curso, Aluno.curso_graduacao())
-
 
